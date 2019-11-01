@@ -13,9 +13,23 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
 <style>
  body {
   background-image:url('https://ak5.picdn.net/shutterstock/videos/1021538155/thumb/11.jpg');
+}
+
+a:link, a:visited {
+  background-color: #000033;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #000066;
 }
 </style>
     
@@ -27,8 +41,8 @@
         <h1 class="cover-heading">Saas Project'19</h1>
         <p class="lead">Project Team: Shamikasmruthi S , E.S.S Ruthvika<br>
  We have developed a contact form and a blog. Go ahead and explore!</p>
-        <a href="http://mycontactform.herokuapp.com/">Contact Form</a>
-	<%= link_to 'My Blog', controller: 'articles' %>
+        <a href="http://mycontactform.herokuapp.com/">Contact Form</a><br>
+	<a><%= link_to 'My Blog', controller: 'articles' %></a>
       </main>
 
       <footer class="mastfoot mt-auto">

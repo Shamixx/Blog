@@ -13,11 +13,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+<style>
+ body {
+  background-image:url('https://ak5.picdn.net/shutterstock/videos/1021538155/thumb/11.jpg');
+}
+</style>
+    
   </head>
-
+<center>
   <body class="text-center">
 
       <main role="main" class="inner cover">
@@ -25,6 +28,7 @@
         <p class="lead">Project Team: Shamikasmruthi S , E.S.S Ruthvika<br>
  We have developed a contact form and a blog. Go ahead and explore!</p>
         <a href="http://mycontactform.herokuapp.com/">Contact Form</a>
+	<%= link_to 'My Blog', controller: 'articles' %>
       </main>
 
       <footer class="mastfoot mt-auto">
@@ -42,6 +46,7 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
+   </center>
   </body>
 </html>
-<%= link_to 'My Blog', controller: 'articles' %>
+
